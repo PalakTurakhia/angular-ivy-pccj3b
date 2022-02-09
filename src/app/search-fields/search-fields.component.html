@@ -1,0 +1,16 @@
+<div>
+  <table>
+    <tr *ngFor="let configObj of searchFieldConfig">
+      <td align="left"></td>
+      {{
+        configObj.symbol
+      }}
+      <td>
+        {{ configObj.label }}
+      </td>
+      <td width="25px"></td>
+
+      <td><input [(ngModel)]="configObj.value" keyup.Enter="onEnter()" /></td>
+    </tr>
+  </table>
+</div>
