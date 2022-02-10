@@ -24,6 +24,7 @@ export class SearchFieldsComponent implements OnInit {
   
   onEnter() {
     this.txtValue = '';
+  
     this.searchFieldConfig.forEach((obj) => {
       if (obj.value) {
         this.txtValue += obj.symbol + obj.value;

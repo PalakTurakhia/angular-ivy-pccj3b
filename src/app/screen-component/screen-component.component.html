@@ -1,4 +1,11 @@
+<body bgcolor="white">
 <app-search-fields
-[searchFieldConfig] = searchFieldConfig
-(textBarPopulator) = populateSearchTextBar
+  [searchFieldConfig]="searchFieldConfig"
+  (textBarPopulator)="populateSearchTextBar($event)"
 ></app-search-fields>
+<app-search-text-bar
+  [barTextValue]="barText"
+  (fieldPopulator)="populateSearchFields($event)"
+  (clearValues) = "populateSearchFields($event)"
+></app-search-text-bar>
+</body>

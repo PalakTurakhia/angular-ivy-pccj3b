@@ -10,7 +10,7 @@
       </td>
       <td width="25px"></td>
 
-      <td><input [(ngModel)]="configObj.value" keyup.Enter="onEnter()" /></td>
+      <td><input [(ngModel)]="configObj.value" (keyup.enter)="onEnter()" /></td>
     </tr>
   </table>
 </div>
